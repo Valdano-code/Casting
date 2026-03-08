@@ -55,7 +55,7 @@ export default function AdminLoginPage() {
           </div>
 
           <p className="text-center text-sm text-muted-foreground mb-6">
-            {"Entrez le code d'acc\u00e8s administrateur pour continuer."}
+            {"Entrez le code d'accès administrateur pour continuer."}
           </p>
 
           <div className="relative mb-4">

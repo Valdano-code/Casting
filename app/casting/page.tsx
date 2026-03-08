@@ -34,8 +34,8 @@ const STEPS = [
 ]
 
 const COUNTRIES = [
-  "B\u00e9nin", "Togo", "C\u00f4te d'Ivoire", "S\u00e9n\u00e9gal", "Burkina Faso",
-  "Mali", "Niger", "Guin\u00e9e", "Cameroun", "Gabon", "Congo",
+  "Bénin", "Togo", "Cote d'Ivoire", "Sénégal", "Burkina Faso",
+  "Mali", "Niger", "Guinée", "Cameroun", "Gabon", "Congo",
   "Ghana", "Nigeria", "France", "Autre"
 ]
 
@@ -136,7 +136,7 @@ export default function CastingPage() {
               <CheckCircle2 className="h-10 w-10 text-primary" />
             </div>
             <h1 className="text-3xl font-bold text-foreground mb-4">
-              {"Inscription envoy\u00e9e !"}
+              {"Inscription envoyée !"}
             </h1>
             <p className="text-muted-foreground mb-2">
               {"Merci pour votre candidature au casting La Magie du Soir 2026."}
@@ -153,7 +153,7 @@ export default function CastingPage() {
               </a>
               <Link href="/">
                 <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-                  {"Retour \u00e0 l'accueil"}
+                  {"Retour à l'accueil"}
                 </Button>
               </Link>
             </div>
@@ -175,13 +175,13 @@ export default function CastingPage() {
               {"Casting officiel \u2013 La Magie du Soir 2026"}
             </h1>
             <p className="text-muted-foreground mt-2 text-sm md:text-base">
-              {"Vous avez un talent artistique ? Inscrivez-vous d\u00e8s maintenant pour rejoindre l'aventure."}
+              {"Vous avez un talent artistique ? Inscrivez-vous dès maintenant pour rejoindre l'aventure."}
             </p>
           </div>
           <div className="text-right shrink-0 ml-4">
             <span className="text-primary text-2xl font-bold">{step}/5</span>
             <p className="text-muted-foreground text-xs uppercase tracking-wider">
-              {"\u00c9tapes"}
+              {"Etapes"}
             </p>
           </div>
         </div>
@@ -219,7 +219,7 @@ export default function CastingPage() {
                   1
                 </span>
                 <h2 className="text-lg font-semibold text-foreground">
-                  {"Choix de la cat\u00e9gorie"}
+                  {"Choix de la catégorie"}
                 </h2>
               </div>
               {step > 1 && (
@@ -297,10 +297,10 @@ export default function CastingPage() {
                   </div>
                   <div>
                     <label className="text-sm text-muted-foreground mb-2 block">
-                      {"Pr\u00e9nom"} <span className="text-primary">*</span>
+                      {"Prénoms"} <span className="text-primary">*</span>
                     </label>
                     <Input
-                      placeholder="Entrez votre pr\u00e9nom"
+                      placeholder="Entrez vos prénoms"
                       value={formData.prenom}
                       onChange={(e) => updateField("prenom", e.target.value)}
                       className="bg-secondary/50 border-border h-11"
@@ -341,14 +341,14 @@ export default function CastingPage() {
                   </div>
                   <div>
                     <label className="text-sm text-muted-foreground mb-2 block">
-                      {"Nationalit\u00e9"} <span className="text-primary">*</span>
+                      {"Nationalité"} <span className="text-primary">*</span>
                     </label>
                     <Select
                       value={formData.nationalite}
                       onValueChange={(v) => updateField("nationalite", v)}
                     >
                       <SelectTrigger className="w-full bg-secondary/50 border-border h-11">
-                        <SelectValue placeholder="S\u00e9lectionnez votre pays" />
+                        <SelectValue placeholder="Sélectionnez votre pays" />
                       </SelectTrigger>
                       <SelectContent>
                         {COUNTRIES.map((c) => (
@@ -361,7 +361,7 @@ export default function CastingPage() {
                   </div>
                   <div>
                     <label className="text-sm text-muted-foreground mb-2 block">
-                      {"Ville de r\u00e9sidence"} <span className="text-primary">*</span>
+                      {"Ville de résidence"} <span className="text-primary">*</span>
                     </label>
                     <Input
                       placeholder="Ex: Cotonou"
@@ -372,7 +372,7 @@ export default function CastingPage() {
                   </div>
                   <div>
                     <label className="text-sm text-muted-foreground mb-2 block">
-                      {"T\u00e9l\u00e9phone"} <span className="text-primary">*</span>
+                      {"Téléphone"} <span className="text-primary">*</span>
                     </label>
                     <div className="relative">
                       <Phone className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
@@ -434,7 +434,7 @@ export default function CastingPage() {
                 <div className="flex flex-col gap-6">
                   <div>
                     <label className="text-sm text-muted-foreground mb-2 block">
-                      {"Exp\u00e9rience artistique"} <span className="text-primary">*</span>
+                      {"Expérience artistique"} <span className="text-primary">*</span>
                     </label>
                     <Textarea
                       placeholder="D\u00e9crivez votre parcours et vos exp\u00e9riences artistiques..."
@@ -476,7 +476,7 @@ export default function CastingPage() {
                     4
                   </span>
                   <h2 className="text-lg font-semibold text-foreground">
-                    {"M\u00e9dias"}
+                    {"Médias"}
                   </h2>
                 </div>
                 {step > 4 && (
@@ -527,7 +527,7 @@ export default function CastingPage() {
                   </div>
                   <div>
                     <label className="text-sm text-muted-foreground mb-2 block">
-                      {"Lien vid\u00e9o (YouTube, TikTok, etc.)"}
+                      {"Lien vidéo (YouTube, TikTok, etc.)"}
                     </label>
                     <Input
                       placeholder="https://..."
@@ -538,7 +538,7 @@ export default function CastingPage() {
                       className="bg-secondary/50 border-border h-11"
                     />
                     <p className="text-xs text-muted-foreground mt-2">
-                      {"Partagez un lien vers une vid\u00e9o de votre performance"}
+                      {"Partagez un lien vers une vidéo de votre performance"}
                     </p>
                   </div>
                 </div>
@@ -566,7 +566,7 @@ export default function CastingPage() {
               <div className="flex flex-col gap-6">
                 <div className="rounded-lg border border-border bg-secondary/30 p-4">
                   <h3 className="text-foreground font-medium mb-2">
-                    {"R\u00e9capitulatif"}
+                    {"Récapitulatif"}
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
                     <div>
@@ -597,7 +597,7 @@ export default function CastingPage() {
                     {"Frais d'inscription : 5.000 FCFA"}
                   </p>
                   <p className="text-muted-foreground text-sm">
-                    {"Le paiement sera effectu\u00e9 sur place le jour du casting."}
+                    {"Le paiement sera effectué sur place le jour du casting."}
                   </p>
                 </div>
 
@@ -626,7 +626,7 @@ export default function CastingPage() {
                     className="mt-1 accent-[#d4a017] h-4 w-4"
                   />
                   <span className="text-sm text-muted-foreground">
-                    {"Je m'engage \u00e0 r\u00e9gler les frais d'inscription de 5.000 FCFA le jour du casting."}{" "}
+                    {"Je m'engage à régler les frais d'inscription de 5.000 FCFA le jour du casting."}{" "}
                     <span className="text-primary">*</span>
                   </span>
                 </label>
@@ -677,7 +677,7 @@ export default function CastingPage() {
 
         {/* Help text */}
         <p className="text-center text-sm text-muted-foreground mt-8">
-          {"Besoin d'aide ? Contactez notre \u00e9quipe de casting \u00e0 "}
+          {"Besoin d'aide ? Contactez notre équipe de casting "}
           <a
             href="mailto:casting@lamagiedusoir.com"
             className="text-primary hover:underline"
@@ -690,7 +690,7 @@ export default function CastingPage() {
       {/* Footer */}
       <footer className="border-t border-border py-6 text-center">
         <p className="text-xs text-muted-foreground">
-          {"\u00a9 2026 La Magie du Soir. Tous droits r\u00e9serv\u00e9s."}
+          {"\u00a9 2026 La Magie du Soir. Tous droits réservs."}
         </p>
       </footer>
     </div>

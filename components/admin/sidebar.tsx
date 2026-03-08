@@ -68,7 +68,7 @@ export function AdminSidebar() {
       <div className="p-4 border-t border-sidebar-border">
         <div className="rounded-lg bg-sidebar-accent p-3 mb-3">
           <p className="text-sidebar-primary text-xs font-semibold uppercase tracking-wider mb-1">
-            {"Status syst\u00e8me"}
+            {"Status système"}
           </p>
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-green-500" />
@@ -82,7 +82,7 @@ export function AdminSidebar() {
           className="flex items-center gap-2 text-sm text-sidebar-foreground/50 hover:text-destructive transition-colors w-full px-3 py-2"
         >
           <LogOut className="h-4 w-4" />
-          {"D\u00e9connexion"}
+          {"Déconnexion"}
         </button>
       </div>
     </aside>

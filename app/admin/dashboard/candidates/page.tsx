@@ -1,5 +1,5 @@
 "use client"
-
+import { useRouter } from "next/navigation"
 import { useEffect, useMemo, useState } from "react"
 import { Search, Filter, MoreVertical, Download, Eye } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -132,6 +132,7 @@ export default function CandidatesPage() {
   const [filterStatus, setFilterStatus] = useState("all")
   const [filterCategory, setFilterCategory] = useState("all")
   const [loading, setLoading] = useState(true)
+  const router = useRouter()
 
   useEffect(() => {
     const fetchCandidates = async () => {
@@ -367,9 +368,7 @@ export default function CandidatesPage() {
                         <Button
                           variant="ghost"
                           size="icon"
-                          onClick={() => {
-                            window.location.href = `/dashboard/candidates/${c.id}`
-                          }}
+                          onClick={() => router.push(`/admin/dashboard/candidates/${c.id}`)}
                           className="text-muted-foreground hover:text-primary h-8 w-8"
                         >
                           <Eye className="h-4 w-4" />
